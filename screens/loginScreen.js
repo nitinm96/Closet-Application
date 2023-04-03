@@ -6,13 +6,13 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 const LoginScreen = () => {
   const navigation = useNavigation();
-  const { signInWithGoogle } = useAuth();
+  const { signInWithGoogle,signIn} = useAuth();
 
   return (
     <View style={styles.container}>
       <Image style={styles.img} source={require("../assets/logo.png")} />
 
-      <TouchableOpacity style={styles.buttonStyle} onPress={signInWithGoogle}>
+      <TouchableOpacity style={styles.buttonStyle} onPress={signIn}>
         <Ionicons name="logo-google" color={"#fa79a0"} size={30} />
 
         <Text

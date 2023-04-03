@@ -108,7 +108,6 @@ const TopsScreen = () => {
           </TouchableOpacity>
         )}
       />
-
       <FooterNav />
     </View>
   );

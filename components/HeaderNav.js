@@ -17,7 +17,7 @@ import { resetCameraImage } from "../slices/cameraSlice";
 const HeaderNav = () => {
   const navigation = useNavigation();
 
-  const { user, logout } = useAuth();
+  const { user, logout,signOut } = useAuth();
   const dispatch = useDispatch();
   const takePhotoAgain = () => {
     navigation.navigate("Camera", dispatch(resetCameraImage()));
@@ -55,7 +55,7 @@ const HeaderNav = () => {
                   {
                     text: "Sign Out",
                     onPress: () => {
-                      logout();
+                      signOut();
                     },
                   },
                   { text: "Cancel" },

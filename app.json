@@ -17,8 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.exponent", 
+      "googleServicesFile": "./GoogleService-Info.plist"
+
     },
+        "plugins": ["@react-native-google-signin/google-signin"],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -29,5 +33,5 @@
       "favicon": "./assets/favicon.png"
     },
     "description": ""
-  }
+ }
 }
