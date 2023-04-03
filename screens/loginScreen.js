@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import useAuth from "../hooks/useAuth";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-const loginScreen = () => {
+const LoginScreen = () => {
   const navigation = useNavigation();
   const { signInWithGoogle } = useAuth();
 
@@ -30,7 +30,7 @@ const loginScreen = () => {
   );
 };
 
-export default loginScreen;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {

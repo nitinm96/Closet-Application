@@ -18,7 +18,7 @@ import { useNavigation } from "@react-navigation/native";
 import BottomsPhoto from "../components/renderPhotos/BottomsPhoto";
 import ImageView from "react-native-image-viewing";
 
-const bottomsScreen = () => {
+const BottomsScreen = () => {
   const navigation = useNavigation();
 
   const [bottomPhotos, setBottomPhotos] = useState([]);
@@ -114,7 +114,7 @@ const bottomsScreen = () => {
   );
 };
 
-export default bottomsScreen;
+export default BottomsScreen;
 
 const styles = StyleSheet.create({
   container: {

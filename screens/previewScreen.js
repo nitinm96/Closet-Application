@@ -9,7 +9,7 @@ import {
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { Header } from "react-native-elements";
 
-const previewScreen = ({ navigation }) => {
+const PreviewScreen = ({ navigation }) => {
   const cameraImage = useSelector(selectCameraImage);
   const dispatch = useDispatch();
 
@@ -68,7 +68,7 @@ const previewScreen = ({ navigation }) => {
   );
 };
 
-export default previewScreen;
+export default PreviewScreen;
 
 const styles = StyleSheet.create({
   container: {

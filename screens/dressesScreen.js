@@ -18,7 +18,7 @@ import { useNavigation } from "@react-navigation/native";
 import DressesPhoto from "../components/renderPhotos/DressesPhoto";
 import ImageView from "react-native-image-viewing";
 
-const dressesScreen = () => {
+const DressesScreen = () => {
   const navigation = useNavigation();
 
   const [dressPhotos, setDressPhotos] = useState([]);
@@ -114,7 +114,7 @@ const dressesScreen = () => {
   );
 };
 
-export default dressesScreen;
+export default DressesScreen;
 
 const styles = StyleSheet.create({
   container: {

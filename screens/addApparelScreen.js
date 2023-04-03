@@ -27,7 +27,7 @@ import {
 } from "firebase/firestore";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-const addApparelScreen = ({ navigation }) => {
+const AddApparelScreen = ({ navigation }) => {
   const cameraImage = useSelector(selectCameraImage);
   const { user } = useAuth();
   const id = uuid.v4();
@@ -268,7 +268,7 @@ const addApparelScreen = ({ navigation }) => {
   );
 };
 
-export default addApparelScreen;
+export default AddApparelScreen;
 
 const styles = StyleSheet.create({
   container: {

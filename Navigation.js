@@ -1,15 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import useAuth from "./hooks/useAuth";
-import addApparelScreen from "./screens/addApparelScreen";
-import bottomsScreen from "./screens/bottomsScreen";
-import cameraScreen from "./screens/cameraScreen";
-import dressesScreen from "./screens/dressesScreen";
-import homeScreen from "./screens/homeScreen";
-import loginScreen from "./screens/loginScreen";
-import previewScreen from "./screens/previewScreen";
-import shoesScreen from "./screens/shoesScreen";
-import topsScreen from "./screens/topsScreen";
+import AddApparelScreen from "./screens/AddApparelScreen";
+import BottomsScreen from "./screens/BottomsScreen";
+import CameraScreen from "./screens/CameraScreen";
+import DressesScreen from "./screens/DressesScreen";
+import HomeScreen from "./screens/HomeScreen";
+import LoginScreen from "./screens/LoginScreen";
+import PreviewScreen from "./screens/PreviewScreen";
+import ShoesScreen from "./screens/ShoesScreen";
+import TopsScreen from "./screens/TopsScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,50 +22,50 @@ const Navigation = () => {
         <>
           <Stack.Screen
             name="Home"
-            component={homeScreen}
+            component={HomeScreen}
             options={{ headerShown: false }}
           />
 
           <Stack.Screen
             name="Camera"
-            component={cameraScreen}
+            component={CameraScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Preview"
-            component={previewScreen}
+            component={PreviewScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="AddApparel"
-            component={addApparelScreen}
+            component={AddApparelScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Tops"
-            component={topsScreen}
+            component={TopsScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Bottoms"
-            component={bottomsScreen}
+            component={BottomsScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Dresses"
-            component={dressesScreen}
+            component={DressesScreen}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Shoes"
-            component={shoesScreen}
+            component={ShoesScreen}
             options={{ headerShown: false }}
           />
         </>
       ) : (
         <Stack.Screen
           name="Login"
-          component={loginScreen}
+          component={LoginScreen}
           options={{ headerShown: false }}
         />
       )}

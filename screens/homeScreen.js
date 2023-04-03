@@ -7,7 +7,7 @@ import HeaderNav from "../components/HeaderNav";
 import HomeViewPhotos from "../components/HomeViewPhotos";
 import useAuth from "../hooks/useAuth";
 
-const homeScreen = () => {
+const HomeScreen = () => {
   const navigation = useNavigation();
 
   const { user, logout } = useAuth();
@@ -26,7 +26,7 @@ const homeScreen = () => {
   );
 };
 
-export default homeScreen;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {

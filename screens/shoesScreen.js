@@ -18,7 +18,7 @@ import { useNavigation } from "@react-navigation/native";
 import ShoesPhoto from "../components/renderPhotos/ShoesPhoto";
 import ImageView from "react-native-image-viewing";
 
-const shoesScreen = () => {
+const ShoesScreen = () => {
   const navigation = useNavigation();
 
   const [shoePhotos, setShoePhotos] = useState([]);
@@ -114,7 +114,7 @@ const shoesScreen = () => {
   );
 };
 
-export default shoesScreen;
+export default ShoesScreen;
 
 const styles = StyleSheet.create({
   container: {

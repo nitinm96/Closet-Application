@@ -18,7 +18,7 @@ import { resetCameraImage } from "../slices/cameraSlice";
 import { useNavigation } from "@react-navigation/native";
 import ImageView from "react-native-image-viewing";
 
-const topsScreen = () => {
+const TopsScreen = () => {
   const navigation = useNavigation();
 
   const [topPhotos, setTopPhotos] = useState([]);
@@ -114,7 +114,7 @@ const topsScreen = () => {
   );
 };
 
-export default topsScreen;
+export default TopsScreen;
 
 const styles = StyleSheet.create({
   container: {

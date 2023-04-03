@@ -7,7 +7,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { StatusBar } from "expo-status-bar";
 import { Header } from "react-native-elements";
 
-const cameraScreen = ({ navigation }) => {
+const CameraScreen = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
   const cameraRef = useRef(null);
@@ -84,7 +84,7 @@ const cameraScreen = ({ navigation }) => {
   );
 };
 
-export default cameraScreen;
+export default CameraScreen;
 
 const styles = StyleSheet.create({
   container: {
